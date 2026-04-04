@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinicius Cubas Brand — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <h1>Vinicius Cubas Brand</h1>
+    <div class="contact">
+      Brazil (GMT−3) &nbsp;|&nbsp;
+      <a href="mailto:viniciuscb@gmail.com">viniciuscb@gmail.com</a> &nbsp;|&nbsp;
+      <a href="https://linkedin.com/in/viniciusbrand">linkedin.com/in/viniciusbrand</a> &nbsp;|&nbsp;
+      <a href="https://github.com/viniciuscb">github.com/viniciuscb</a>
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <section>
+    <h2>Summary</h2>
+    <p>Senior Full-Stack and Mobile Engineer with 25 years of experience building web and mobile
+    applications across SaaS, social impact, and embedded systems. Proficient in Ruby on Rails,
+    React/TypeScript, Django/Python, and React Native, with a track record of owning complex
+    features end-to-end in agile remote teams. M.Sc. in Computer Sciences. Based in
+    Brazil (GMT−3), available for full overlap with EST/PST.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-row"><span class="skill-label">Languages</span><span class="skill-value">Ruby, Python, JavaScript/TypeScript, Java, PHP, SQL</span></div>
+      <div class="skill-row"><span class="skill-label">Frameworks</span><span class="skill-value">Ruby on Rails, Django, React, React Native, Redux, GraphQL (Apollo), Android (Java)</span></div>
+      <div class="skill-row"><span class="skill-label">Databases</span><span class="skill-value">MySQL, PostgreSQL, Redis, Elasticsearch, CouchDB/PouchDB</span></div>
+      <div class="skill-row"><span class="skill-label">Infrastructure</span><span class="skill-value">Linux, Docker, AWS (Lambda, EC2), Sidekiq, Git, Datadog, Airbrake</span></div>
+      <div class="skill-row"><span class="skill-label">AI Tools</span><span class="skill-value">Claude Code</span></div>
+      <div class="skill-row"><span class="skill-label">Practices</span><span class="skill-value">Agile/Scrum, TDD, REST APIs, code review, CI/CD</span></div>
+      <div class="skill-row"><span class="skill-label">Human languages</span><span class="skill-value">Portuguese (native), English (advanced)</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">TapGoods</span>
+        <span class="entry-date">Jan 2024 – Present</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Senior Software Engineer</span>
+        <span class="entry-location">Remote</span>
+      </div>
+      <p class="entry-context">B2B multi-tenant SaaS platform serving hundreds of rental businesses across North America. Stack: Ruby on Rails, GraphQL, React, Redux, TypeScript, MySQL, Redis, Elasticsearch, Sidekiq, Docker.</p>
+      <ul>
+        <li>Refactored a legacy routing and delivery module as the sole programmer — collaborating with the team lead on model relationships and migration planning, and coordinating with customer support for QA — resolving a long-standing backlog of customer-reported bugs and significantly improving routing reliability.</li>
+        <li>Implemented an Event Grouping feature end-to-end (database schema, GraphQL API, React UI, and multi-document billing reports), enabling rental operators to track and invoice multiple orders under a single event.</li>
+        <li>Led a printout standardization initiative, migrating 3 core customer-facing documents (invoices, rental summaries, picklists) from ad-hoc React rendering to a unified Rails backend system with HTML/CSS templates, including iterative style refinements with the product team.</li>
+        <li>Integrated a mobile barcode scanning library into the serialized inventory workflow, enabling warehouse staff to scan items using smartphones and eliminating manual serial number entry.</li>
+        <li>Implemented the Load Lists feature end-to-end from product specifications and Figma designs: proposed the data model (ER design), built the full-stack UI, and developed a slip printing system supporting both HTML/CSS and Zebra ZPL label printers.</li>
+        <li>Contributed across the full backlog alongside the team — SQL query optimization, async image processing, API error handling, bug triage via Datadog and Airbrake, code reviews in daily agile sprints — and actively integrates Claude Code for AI-assisted development across Rails and React codebases.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">Cooperativa EITA</span>
+        <span class="entry-date">Dec 2013 – Oct 2024</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Full-Stack Developer &amp; Systems Analyst</span>
+        <span class="entry-location">Remote</span>
+      </div>
+      <p class="entry-context">Mission-driven technology cooperative building software for social movements, solidarity economy organizations, and NGOs in Brazil.</p>
+      <ul>
+        <li>Contributed LDAP write support to the Nextcloud open-source project, extending Nextcloud core to allow user creation and management from the Nextcloud UI when accounts are backed by an LDAP directory; the implementation served as the foundation for the official <a href="https://apps.nextcloud.com/apps/ldap_write_support">ldap_write_support</a> community plugin.</li>
+        <li>Served as the team's primary Ruby on Rails developer across multiple client projects, leading architecture decisions and end-to-end delivery for RoR-based systems.</li>
+        <li>Administered the RIOS platform (<a href="https://rios.eita.coop.br">rios.eita.coop.br</a>), a multi-tenant SaaS cloud service for non-profits and activist organizations — including Nextcloud + Matrix.org (Synapse) chat integration, AWS Lambda functions, and Linux server management.</li>
+        <li>Built Castanhadora, a native Android (Java) application enabling nut collectors in the Brazilian Amazon to track production and monitor fair sale prices.</li>
+        <li>Developed Lume, a Python/Django system replacing a manual spreadsheet workflow for agroecological farm management, featuring data visualization and reporting.</li>
+        <li>Collaborated with non-technical community clients to gather requirements, model data, and translate social needs into technical specifications across multiple projects.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">Focus NFe</span>
+        <span class="entry-date">Jan 2013 – Dec 2017</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Frontend Software Engineer (part-time)</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+      <ul>
+        <li>Built the customer-facing UI from designer wireframes using Ember.js, Bootstrap, and CoffeeScript, integrating with a RESTful Ruby on Rails API in a lean 4-person team.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">RMI Informática Industrial</span>
+        <span class="entry-date">Dec 2011 – Oct 2012</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Full-Stack Developer</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+      <ul>
+        <li>As the startup's first hire, built foundational front-end components using Ruby on Rails, Backbone.js, and Marionette.js.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">Dataprom</span>
+        <span class="entry-date">Feb 2008 – Dec 2009</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Full-Stack Developer</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+      <ul>
+        <li>Modernized legacy interfaces and built new features for a large-scale automated fare collection system (public transport ticketing) using Java, Struts2, and Hibernate.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">Focus NFe</span>
+        <span class="entry-date">Sep 2006 – Jan 2008</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Full-Stack Developer</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+      <ul>
+        <li>Developed full-stack web applications for clients in forest engineering and medicine using PHP and Ruby on Rails, with direct client consultation.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">LACTEC</span>
+        <span class="entry-date">Mar 2006 – Sep 2006</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Firmware Developer</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+      <ul>
+        <li>In a LACTEC–Siemens partnership, engineered embedded Linux firmware in C for remote-controlled telecommunications equipment.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">Early Career</span>
+        <span class="entry-date">2000 – 2005</span>
+      </div>
+      <ul>
+        <li>Full-stack developer at Thyamad Projects (PHP, eGroupWare customization); CMS and web developer at Editora Quantum (PHP, Oracle); Electronics Technician at Interatec; academic scholarship at UFPR (teaching, research in image processing and AI planning).</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">UFPR – Federal University of Paraná</span>
+        <span class="entry-date">2007</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">M.Sc., Informatics</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+      <ul>
+        <li>Area: Digital Image Processing applied to Dermatology</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">UFPR – Federal University of Paraná</span>
+        <span class="entry-date">2004</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">B.Sc., Computer Sciences</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-org">UTFPR – Federal Center for Technical Education</span>
+        <span class="entry-date">2000</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-title">Electronics Technician</span>
+        <span class="entry-location">Curitiba, Brazil</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- OTHER -->
+  <section>
+    <h2>Other</h2>
+    <p>Yoga teacher since 2008 (second profession). Former coordinator of CicloIguaçu, a cycling advocacy organization; co-organized the Third World Bicycle Forum (Curitiba, 2014, ~3,000 attendees).</p>
+  </section>
+
+  <footer>
+    Last updated: April 2026
+  </footer>
+
+</div>
+</body>
+</html>

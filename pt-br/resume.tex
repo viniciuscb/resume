@@ -1,0 +1,229 @@
+%-------------------------
+% Vinicius Cubas Brand -- Currículo
+% Baseado no template de Jake Gutierrez
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------CONFIGURAÇÃO DE PÁGINA----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------FORMATAÇÃO DE SEÇÕES----------
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%----------COMANDOS CUSTOMIZADOS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Linha de contexto em itálico abaixo do cabeçalho, sem marcador
+\newcommand{\resumeDescription}[1]{%
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item\small{\textit{#1}}
+  \end{itemize}\vspace{-10pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%===========================================
+\begin{document}
+
+%----------CABEÇALHO----------
+\begin{center}
+  {\Huge \scshape Vinicius Cubas Brand} \\[4pt]
+  \small
+  Brasil (GMT$-$3) \,$|$\,
+  \href{mailto:viniciuscb@gmail.com}{viniciuscb@gmail.com} \,$|$\,
+  \href{https://linkedin.com/in/viniciusbrand}{linkedin.com/in/viniciusbrand} \,$|$\,
+  \href{https://github.com/viniciuscb}{github.com/viniciuscb}
+\end{center}
+
+%----------RESUMO----------
+\section{Resumo}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    Engenheiro de Software Sênior Full-Stack e Mobile com 25~anos de experiência no desenvolvimento de
+    aplicações web e mobile em SaaS, impacto social e sistemas embarcados. Proficiente em
+    Ruby on Rails, React/TypeScript, Django/Python, React Native, etc, com histórico de conduzir
+    funcionalidades complexas de ponta a ponta em equipes ágeis e remotas. Mestre em
+    Informática. Baseado no Brasil (GMT$-$3).
+  }}
+\end{itemize}
+
+%----------COMPETÊNCIAS----------
+\section{Competências}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Linguagens:} Ruby, Python, JavaScript/TypeScript, Java, PHP, SQL \\
+    \textbf{Frameworks:} Ruby on Rails, Django, React, React Native, Redux, GraphQL (Apollo), Android (Java) \\
+    \textbf{Bancos de Dados:} MySQL, PostgreSQL, Redis, Elasticsearch, CouchDB/PouchDB \\
+    \textbf{Infraestrutura:} Linux, Docker, AWS (Lambda, EC2), Sidekiq, Git, Datadog, Airbrake \\
+    \textbf{Ferramentas de IA:} Claude Code \\
+    \textbf{Práticas:} Agile/Scrum, TDD, REST APIs, revisão de código, CI/CD \\
+    \textbf{Idiomas:} Português (nativo), Inglês (avançado)
+  }}
+\end{itemize}
+
+%----------EXPERIÊNCIA----------
+\section{Experiência}
+\resumeSubHeadingListStart
+
+  %----- TapGoods -----
+  \resumeSubheading
+    {Engenheiro de Software Sênior}{Jan 2024 -- Presente}
+    {TapGoods}{Remoto}
+  \resumeDescription{Plataforma SaaS B2B multi-tenant atendendo centenas de empresas do setor de locação na América do Norte. Stack: Ruby on Rails, GraphQL, React, Redux, TypeScript, MySQL, Redis, Elasticsearch, Sidekiq, Docker.}
+  \resumeItemListStart
+    \resumeItem{Refatorou o módulo legado de roteamento e entregas como único programador --- colaborando com o líder técnico no relacionamento entre modelos e planejamento da migração, e coordenando com o suporte ao cliente para QA --- resolvendo um longo backlog de bugs reportados por clientes e melhorando significativamente a confiabilidade do roteamento.}
+    \resumeItem{Implementou a funcionalidade de Agrupamento de Eventos de ponta a ponta (schema de banco de dados, API GraphQL, interface React e relatórios de faturamento), permitindo que operadores de locação rastreiem e faturem múltiplos pedidos em um único evento.}
+    \resumeItem{Liderou uma iniciativa de padronização de impressos, migrando 3 documentos principais voltados ao cliente (faturas, resumos de locação, listas de separação) da renderização ad-hoc em React para um sistema unificado no backend Rails com templates HTML/CSS, incluindo refinamentos iterativos de estilo com a equipe de produto.}
+    \resumeItem{Integrou uma biblioteca de leitura de código de barras mobile ao fluxo de trabalho de inventário serializado, permitindo que funcionários do armazém escaneiem itens com smartphones, eliminando a inserção manual de números de série.}
+    \resumeItem{Implementou a funcionalidade Load Lists de ponta a ponta a partir de especificações de produto e designs no Figma: propôs o modelo de dados (diagrama ER), desenvolveu a interface full-stack e criou um sistema de impressão de etiquetas suportando tanto HTML/CSS quanto impressoras Zebra ZPL.}
+    \resumeItem{Contribuiu em todo o backlog junto à equipe --- otimização de queries SQL, processamento assíncrono de imagens, tratamento de erros de API, triagem de bugs via Datadog e Airbrake, revisões de código em sprints ágeis diários --- e utiliza ativamente o Claude Code para desenvolvimento assistido por IA nas bases de código Rails e React.}
+  \resumeItemListEnd
+
+  %----- EITA -----
+  \resumeSubheading
+    {Desenvolvedor Full-Stack e Analista de Sistemas}{Dez 2013 -- Out 2024}
+    {Cooperativa EITA}{Remoto}
+  \resumeDescription{Cooperativa de tecnologia orientada por missão, desenvolvendo software para movimentos sociais, organizações de economia solidária e ONGs no Brasil.}
+  \resumeItemListStart
+    \resumeItem{Contribuiu com suporte a escrita LDAP ao projeto open-source Nextcloud, estendendo o core do Nextcloud para permitir a criação e o gerenciamento de usuários pela interface do Nextcloud quando as contas são mantidas em um diretório LDAP; a implementação serviu de base para o plugin oficial da comunidade \href{https://apps.nextcloud.com/apps/ldap_write_support}{ldap\_write\_support}.}
+    \resumeItem{Atuou como principal desenvolvedor Ruby on Rails da equipe em múltiplos projetos de clientes, liderando decisões de arquitetura e entrega de ponta a ponta de sistemas baseados em RoR.}
+    \resumeItem{Administrou a plataforma RIOS (\href{https://rios.eita.coop.br}{rios.eita.coop.br}), um serviço de nuvem SaaS multi-tenant para organizações sem fins lucrativos e movimentos sociais --- incluindo integração Nextcloud + Matrix.org (Synapse), funções AWS Lambda e gerenciamento de servidores Linux.}
+    \resumeItem{Desenvolveu o Castanhadora, uma aplicação Android nativa (Java) que permite a coletores de castanhas na Amazônia brasileira registrar a produção e monitorar preços justos de venda.}
+    \resumeItem{Desenvolveu o Lume, um sistema Python/Django que substituiu um fluxo de trabalho manual em planilhas para gerenciamento de propriedades agroecológicas, com visualização de dados e geração de relatórios.}
+    \resumeItem{Colaborou diretamente com clientes não técnicos de movimentos comunitários para levantar requisitos, modelar dados e traduzir necessidades sociais em especificações técnicas em múltiplos projetos.}
+  \resumeItemListEnd
+
+  %----- Focus NFe frontend (part-time) -----
+  \resumeSubheading
+    {Engenheiro de Frontend (meio período)}{Jan 2013 -- Dez 2017}
+    {Focus NFe}{Curitiba, Brasil}
+  \resumeItemListStart
+    \resumeItem{Desenvolveu a interface do usuário a partir de wireframes de design usando Ember.js, Bootstrap e CoffeeScript, integrando com uma API RESTful Ruby on Rails em uma equipe enxuta de 4 pessoas.}
+  \resumeItemListEnd
+
+  %----- RMI -----
+  \resumeSubheading
+    {Desenvolvedor Full-Stack}{Dez 2011 -- Out 2012}
+    {RMI Informática Industrial}{Curitiba, Brasil}
+  \resumeItemListStart
+    \resumeItem{Como primeiro contratado da startup, desenvolveu componentes fundamentais do frontend usando Ruby on Rails, Backbone.js e Marionette.js.}
+  \resumeItemListEnd
+
+  %----- Dataprom -----
+  \resumeSubheading
+    {Desenvolvedor Full-Stack}{Fev 2008 -- Dez 2009}
+    {Dataprom}{Curitiba, Brasil}
+  \resumeItemListStart
+    \resumeItem{Modernizou interfaces legadas e desenvolveu novas funcionalidades para um sistema de arrecadação automática de tarifas em larga escala (bilhetagem de transporte público) usando Java, Struts2 e Hibernate.}
+  \resumeItemListEnd
+
+  %----- Focus NFe full-stack -----
+  \resumeSubheading
+    {Desenvolvedor Full-Stack}{Set 2006 -- Jan 2008}
+    {Focus NFe}{Curitiba, Brasil}
+  \resumeItemListStart
+    \resumeItem{Desenvolveu aplicações web full-stack para clientes das áreas de engenharia florestal e medicina usando PHP e Ruby on Rails, com consulta direta ao cliente.}
+  \resumeItemListEnd
+
+  %----- LACTEC -----
+  \resumeSubheading
+    {Desenvolvedor de Firmware}{Mar 2006 -- Set 2006}
+    {LACTEC}{Curitiba, Brasil}
+  \resumeItemListStart
+    \resumeItem{Em parceria LACTEC--Siemens, desenvolveu firmware Linux embarcado em C para equipamento de telecomunicações com controle remoto.}
+  \resumeItemListEnd
+
+  %----- Início de carreira -----
+  \resumeSubheading
+    {Início de Carreira}{2000 -- 2005}{}{}
+  \resumeItemListStart
+    \resumeItem{Desenvolvedor full-stack na Thyamad Projects (PHP, customização eGroupWare); desenvolvedor de CMS e web na Editora Quantum (PHP, Oracle); Técnico em Eletrônica na Interatec; bolsista acadêmico na UFPR (ensino, pesquisa em processamento de imagens e planejamento em IA).}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------FORMAÇÃO ACADÊMICA----------
+\section{Formação Acadêmica}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Mestrado em Informática}{2007}
+    {UFPR -- Universidade Federal do Paraná}{Curitiba, Brasil}
+  \resumeItemListStart
+    \resumeItem{Área: Processamento Digital de Imagens aplicado à Dermatologia}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Bacharelado em Ciência da Computação}{2004}
+    {UFPR -- Universidade Federal do Paraná}{Curitiba, Brasil}
+
+  \resumeSubheading
+    {Técnico em Eletrônica}{2000}
+    {UTFPR -- Centro Federal de Educação Tecnológica}{Curitiba, Brasil}
+
+\resumeSubHeadingListEnd
+
+%----------OUTRAS ATIVIDADES----------
+\section{Outras Atividades}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    Professor de yoga desde 2008 (segunda profissão). Ex-coordenador da CicloIguaçu, organização
+    de ativismo cicloviário; co-organizador do III Fórum Mundial da Bicicleta (Curitiba, 2014,
+    $\sim$3.000 participantes).
+  }}
+\end{itemize}
+
+\vspace{10pt}
+\begin{center}
+  \small\textit{Última atualização: Abril de 2026}
+\end{center}
+
+\end{document}
