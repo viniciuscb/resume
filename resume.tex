@@ -1,0 +1,204 @@
+\documentclass{resume}
+
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+ 
+\urlstyle{same}
+
+
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+%
+%
+\setlength{\topmargin}{-0.5in}
+%
+%
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+\author{Vinicius Cubas Brand}
+% ------ Address --------------------------------------------------------
+
+\address{
+	\small\tt Bocaina de Minas - MG\\
+        \small\tt Brazil \\
+        \small\tt (GMT -3)}{
+        \small\tt viniciuscb@gmail.com\\
+	\small\tt +55 (35) 991-588-784  (whatsapp)\\
+        \small\tt @viniciuscb (telegram)}
+
+\begin{document}
+\maketitle
+
+% ------- Purposes ---------------------------------------------------
+
+%\begin{category}{Professional Purposes}
+%Yoga teaching
+%\end{category}
+
+% ------- Education ---------------------------------------------------
+
+\begin{category}{ }
+\item \textbf{Senior Software developer (Full Stack/Mobile)}. Problem solving skills, teamwork. Experience of 20+ years working as software developer in diverse industries, mostly small and medium teams/startups.\\Education: BSc and MSc in Computer Sciences.\\Besides that, also teaches yoga and have worked in the past in third sector (bicycle transportation/advocacy)\\
+(Date of this resume: July 7, 2025).
+
+\end{category}
+
+
+\begin{category}{Education}
+\citem{UFPR - Federal University of Paran\'{a}}, Curitiba, Brazil.\\
+MSc. Informatics, May 2007.\\
+Area of Study: Digital Image Processing, applied to Dermatology.
+\citem{UFPR - Federal University of Paran\'{a}}, Curitiba, Brazil. \\
+BSc. Computer Sciences, July 2004.\\
+PET (Tutorial Education Program) Scholarship (March 2002 -- July 2004)
+\citem{UTFPR (CEFET-PR) - Federal Center for Technical Education}, Curitiba, Brazil.\\
+Electronics Technician, Mar 2000.\\
+\end{category}
+
+% --------- Research ----------------------------------------------------
+
+%\begin{category}{Research interests}
+%\citemnobullet Image processing, computer architecture, software engineering
+%\end{category}
+
+% -------- Publication --------------------------------------------
+
+%\begin{category}{Publication}
+%\citemnobullet Learning Markov chains with variable memory 
+%lengths from noisy output. (with Dana Angluin) {\it submitted to COLT'97.}
+%(Extended abstract available as {\tt http://www.cs.yale.edu/\\homes/csuros-miklos/colt97abs.ps}).
+%\end{category}
+
+%\newpage
+% ------- Skills ------------------------------------------------------
+
+\begin{category}{Main skills/stacks (software development)}
+\citembullet \textbf{backend}: Ruby on Rails, Django/Python, PHP
+\citembullet \textbf{mobile}: Android native (java), React Native
+\citembullet \textbf{frontend}: react.js, ember.js, backbone.js
+\citembullet MySQL, PostgreSQL, NoSQL (Amazon DynamoDB, CouchDB/PouchDB), Firebase
+\citembullet Linux, shell script, C, C++, Git, Typescript, free software development, etc
+\citembullet Fluent spoken/written Portuguese; Advanced English. \\
+\end{category}
+
+% -------- Work experience --------------------------------------------
+
+\begin{category}{Work \\experience (Software and tech) }
+
+\citem{Senior Software Engineeer}, TapGoods (since January 2024)\\
+Activities: Software development, bug correction, implementing new features, testing. Agile environment, I worked in all areas of the system, personally I did a refactor in the routing/delivery feature, improved delivery (inventory allocation to trucks), integrated barcodes, slips for packet delivery, etc. Upgrading a legacy system, got, together with the team, to reduce the number of bugs and provide a better user experience.  Stack: \textbf{Ruby on Rails, React, Docker}. Experience with AI Tool: \textbf{Claude Code}. Error monitoring: \textbf{Datadog, Airbrake}. SaaS for rental services industry.
+
+\citem{Full-stack/Mobile Software Developer and Systems Analyst}, EITA - Work Cooperative for Education, Information and Technology for Collective Administration (Autogest\~ao) (since December 2013)\\
+\verb|http://www.eita.coop.br|\\
+Activities: the cooperative works with social movements in Brazil, answering to their software demands, seeking to strengthen the directives of fair commerce, responsible consumerism, solidarity economy, ecological agriculture, land reform, health and social justice.\\
+	Vinicius works / worked in several projects in this cooperative (from newest to oldest):\\
+	\begin{itemize}
+		\item General server maintenance, deployment, scripting. Mainteinance of some instalations: \textbf{Nextcloud}, \textbf{Synapse(Matrix.org)}, self hosted \textbf{Canvas LMS}, \textbf{django} and \textbf{rails} projects. Experience with the \textbf{amazon aws} ecosystem. Developed and maintains a \textbf{amazon lambda} application (node.js). Basic docker usage knowledge. Other minor works.
+		\item \textbf{React Native} application to help people in the Amazon Forest to report land use. Designed to work in complete offline environments and with data exchange between devices. Uses \textbf{couchdb}/\textbf{pouchdb}. Vinicius was responsibile to implement the sync algorithm between devices and also to implement some screens designed by another team.
+		\item \textbf{React Native} application "\href{https://play.google.com/store/apps/details?id=br.org.eita.tonomapa}{T\^{o} no Mapa}" (I'm on map) that helps brazilians living in conflict areas to report incidents and land presence to the national Attorney General. Backed by a \textbf{Django/Python} system and using \textbf{GraphQL} to the communication between backend and app. Vinicius programmed the initial version of both the frontend and the backend.
+		\item Modelling and programming of an \href{https://gitlab.com/eita/castanhadora}{application} in \textbf{android (java)} to be used by nut collectors/producers in Brazil, to allow a better control over production and sale prices.
+		\item An application in \textbf{Python/Django} to allow a better control over agroecological properties/systems. \href{https://gitlab.com/eita/lume}{This project} is an enhancement of a previous system, elaborated by the client, that worked in a spreadsheet. This project delivers graphs and reports in javascript. This project was made mostly by Vinicius and other developer.
+		\item Creation of nextcloud plugins (\textbf{PHP}) : Vinicius worked in developing \href{https://gitlab.com/eita/rios/matrixbridge}{a plugin} that links Matrix rooms to a nextcloud system. Also, he implemented the \href{https://github.com/nextcloud/server/pull/5321}{possibility of extending the LDAP mechanism} in nextcloud by adding a LDAP plugin (this allows the usage of the user management interface in nextcloud to insert users in a LDAP server). This implementation was added in official nextcloud project. Also worked in extensions of the calendar (\href{https://github.com/nextcloud/server/pull/6512/files}{here} and \href{https://github.com/nextcloud/calendar/pull/602/files}{here}), tasks and \href{https://github.com/nextcloud/circles/pull/141/files}{circles} plugins. The Nextcloud project is written in PHP.
+		\item Using the ODK system (ODK collect) to allow dynamic form creation. Experience working and changing the software ELMO/NEMO (\textbf{Ruby on Rails}).
+		\item Developed \href{https://gitlab.com/eita/android-responsa-frontend}{Responsa}, an \textbf{Android} application (now defunct) that allowed people to find nearest places in Brazil that follows good practices of responsible consumerism. Queried and contributed back to several public and associated databases.
+		\item Worked in the development of the platform \href{http://noosfero.org/}{Noosfero}, a \textbf{Ruby on Rails} platform that provides a social network, CMS, shopping cart, used by the \href{http://cirandas.net/}{solidarity economy}/free software movements in Brazil, government agencies (SERPRO) and others.
+	\end{itemize}
+	
+\citem{Freelance Programmer and Consultant}, (since 2002)\\
+Activities: system analysis, software development. Have worked as backend developer (\textbf{php, ruby on rails, python/django}) and frontend developer (\textbf{jQuery, ember.js}). Creation of websites (\textbf{Wordpress}), and others. Some knowledge in creation and deployment of serverless applications in google cloud / firebase.
+
+\citem{Front-end developer}, FocusNFe (former Acras Sistemas) (January 2013 -- December 2017)\\ 
+\verb|https://acras.com.br|\\
+Activities: development of javascript UIs in \textbf{ember.js} to a \textbf{Rails} system. Freelancer/part time job.
+
+\citem{Full-stack developer}, RMI.inf.br (December 2011 - October 2012)\\ 
+Activities: systems analysis and development, using \textbf{Ruby on Rails}, \textbf{bootstrap}, \textbf{backbone.js}, \textbf{marionette.js}
+
+\citem{Full-stack developer}, Dataprom (February 2008 - February 2010)\\ 
+\verb|https://www.dataprom.com|\\
+Activities: systems analysis and development, using \textbf{Java} (frameworks: \textbf{Struts2}, \textbf{Hibernate}), in an automated fare collection system / public transport ticketing software.
+
+\citem{Programmer/Software Developer/Systems Analyst}, FocusNFE (former Acras Sistemas) (September 2006 -- January 2008)\\ 
+\verb|https://acras.com.br|\\
+Activities: systems analysis and development, using the \textbf{PHP}, \textbf{Ruby on Rails}, javascript.\\
+Systems development according to the customer needs, in several areas: medical and forest engineering, among others.
+
+\citem{Programmer/Software-Firmware Developer}, LACTEC - Institute of Tecnology
+for Development (March 2006 -- September 2006)\\ 
+\verb|https://lactec.org.br|\\
+Activities: \textbf{firmware development} for Linux Embedded Systems using \textbf{C} and \textbf{C++}, in a partnership Lactec-Siemens. The project consisted in embedding a web server and application to allow remote control of a power controller equipment for telecom stations.
+
+\citem{Full stack developer}, Thyamad Projects (August 2004 -- January 2006)\\ 
+Activities: software analysis and development using \textbf{PHP} and \textbf{Javascript (vanilla)}. Free Software / Open Source project working experience.\\
+Experience in the development of groupware applications (eGroupWare).
+
+\citem{Scholarship Holder}, PET - Tutorial Education Program,\\
+Federal University of Paran\'{a} - UFPR (March 2002 --  July 2004)\\
+Activities: academic: \textbf{teaching} (linux shell, php programming), research (image processing, artificial intelligence), \textbf{software development} (php, shell script, etc)
+
+\citem{Full stack developer}, Quantum Publishing LTDA\\
+\verb|https://www.editoraquantum.com.br| (November 2000 -- February 2002)\\ 
+Activities: analysis and programming of web-based projects using \textbf{PHP} and \textbf{Oracle}. Creation of a CMS system. Worked in the programming team of the sales portal VendaMais.
+
+\citem{Electronics Technician}, Interatec Interactive Communication Systems (February -- November 2000)\\
+Activities: installation, supervision and project of Cable TV headends.
+
+\end{category}
+
+
+\begin{category}{Work \\experience (activism / third sector)}
+
+\citem{Secretary and Coordinator}, Cicloigua\c cu - Association of Cyclists of Alto Igua\c cu (Curitiba and region, Brazil), 2012/2014\\
+\verb|http://www.cicloiguacu.org.br|\\
+One of the main organizers of the \href{https://www.catarse.me/pt/fmb2014}{Third World Bicycle Forum}, in Curitiba-Brazil.  . It was an 4-day event where about 3000 people attended: NGOs, Bicycle advocacy institutions worldwide, and the general public. Several local and national institutions, academic and corporate, participated in the event. We had to organize the work of about a hundred of volunteers. Besides from that, my specific role was to be the treasurer of the event.\\
+Secretary/General Coordinator of CicloIgua\c cu, a bicycle advocacy group in the region of Curitiba. Listened and organized cyclists demands in the region, being a voice in defense of the interests of bicycle users towards the government, media and the society, mainly at city and state levels.
+
+\end{category}
+
+
+\begin{category}{Work \\experience (as Yoga Teacher)}
+
+\citem{Yoga Teacher} (since 2008)\\
+Yoga teacher in Brazil. \\
+
+\end{category}
+
+
+
+% -------- Reference --------------------------------------------
+
+%\begin{category}{Reference} 
+%\citemnobullet Available on request.
+%\end{category}
+
+\end{document}

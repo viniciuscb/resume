@@ -1,0 +1,326 @@
+% \iffalse
+%% This is handout doucument class source file.
+%% written by Miklos Csuros csuros@cs.yale.edu
+%  based on CS467TA_handout.cls
+%
+% To extract the documentation [handout.tex], run latex on this file.
+% To extract the class file [handout.cls], run docstrip [latex docstrip] 
+% and follow the instructions.
+%
+%
+%
+%<*dtx>
+\ProvidesFile{handout.dtx}[1997/03/26 v2.0beta handout class source file]
+%</dtx>
+%\fi
+% \iffalse
+%<*driver>
+\documentclass{ltxdoc}
+\begin{document}
+\DocInput{handout.dtx}
+\end{document}
+%</driver>
+% \fi
+% \def\docdate {1997/03/26}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \GetFileInfo{handout.dtx}
+% \title{The {\tt handout} document class\thanks{%
+%        This file has version number \fileversion, last revised \filedate, 
+%        documentation dated \docdate.}}
+% \author{Mikl\'os Cs\H{u}r\"os\\\tt csuros@cs.yale.edu}
+% \date{\docdate}
+%
+% \maketitle
+% 
+% \begin{abstract}
+% This is a document class that can be used for handouts with the layout
+% generally used at Yale's Computer Science Department. For each course,
+% a style file should be created containing the course information (instructor,
+% title, etc.) so that the handouts only have to set the handout number (if exists)
+% in the preamble.
+% \end{abstract} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \changes{v2.0}{1997/03/26}{Removed entirely the use of {\tt |...|} as a synonym for \cs{verb}}
+% \changes{v1.0c}{1997/11/07}{Commented out {\tt |...|}.}
+% \changes{v1.0b}{1996/03/08}{Changed \cs{HandoutNumber} so that it uses \cs{handoutname}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% \newpage
+% \MakeShortVerb{\+}
+% \section{Description}
+% \subsection{Mandatory information}
+%
+% For each handout, the following mandatory information should be given:
+% \begin{itemize}
+% \item School name: +\School{+\meta{university}+}+
+% \item Department name: +\Department{+\meta{department}+}+
+% \item Course number: +\CourseNumber{+\meta{course identifier}+}+
+% \item Course title: +\CourseTitle{+\meta{course title}+}+
+% \end{itemize}
+% I recommend putting these into a +.sty+ file for the class.
+%
+% \subsection{Optional information}
+%
+% The following are optional information:
+% \begin{itemize}
+% \item Course Instructor (the default author for the handout): 
+%       +\CourseInstructor{+\meta{instructor's name}+}+ [why not put it into a +.sty+ file
+%                                                        for the class?]
+% \item Handout number: +\HandoutNumber{+\meta{handout number}+}+
+% \item Author (substitutes the instructor if both given): +\author{+\meta{author}+}+
+% \item Date: +\date{+\meta{date}+}+ [if not given, then +\today+ is used.
+% \item Title: +\title{+\meta{title}+}+
+% \end{itemize}
+%
+% \subsection{Customization}
+%
+% The following commands can be redefined using +\renewcommand{+\meta{command}+}+
+% according to your taste.
+% \begin{itemize}
+% \item +\schoolfontstyle+ used to typeset the school's name. Default:	+{\small\sf}+
+% \item +\departmentfontstyle+ used to typeset the departments's name. Default: +{\small\sf}+
+% \item +\authorfontstyle+ used to typeset the author's/instructor's name. Default: +{\sl}+
+% \item +\datefontstyle+ used to typeset the date. Default: +{\sl}+
+% \item +\handoutnumfontstyle+ used to typeset the handout number. Default: +{\sl}+.
+% \item +\titlefontstyle+ used to typeset the title. Default: +{\LARGE\bf}+
+% \item +\headerfontstyle+ used to typeset the header info. Default: +{\sl}+
+% \item +\handoutname+ is the name used in the handout numbering.
+%      Default: +{Handout}+.
+% \end{itemize}
+%
+%
+% \subsection{Options}
+%
+% The option +nopagesetup+ makes the handout skip the page size setups of
+% +handout+ class (will use those of +article+).
+%
+% \subsection{Generating the class file}
+%
+% Use {\tt latex docstrip}. It asks for the input extension [+.dtx+], the output extension
+% [+.cls+], options [none] and the input file name [+handout+]. 
+%
+% \section{Commented source code}
+%
+% \subsection{Identification and options}
+% Identification of the class.
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{handout}[1997/03/26 v2.0beta handout class]
+%    \end{macrocode}
+% \DescribeMacro{nopagesetup}
+% \changes{v2.0}{1997/03/26}{added nopagesetup option}
+% The +handout+ class is based on +article+. Most options of the +article+ class are 
+% accepted, except +titlepage+. The option +nopagesetup+ is taken care of.
+%    \begin{macrocode}
+\newif\if@pagesetup\@pagesetuptrue
+\DeclareOption{nopagesetup}{\@pagesetupfalse}
+\DeclareOption{titlepage}{\ClassWarning{handout}{Option titlepage is not used in this class.}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions
+\LoadClass{article}
+%    \end{macrocode}
+%
+% \subsection{Page setup}
+%
+% The sizes for the text are changed to have more space unless option +nopagesetup+ is
+% chosen.
+%    \begin{macrocode}
+\if@pagesetup
+    \sloppy
+    \setlength{\voffset}{-0.5in}
+    \setlength{\topmargin}{0pt}
+    \setlength{\textheight}{9.0in}
+    \setlength{\textwidth}{6.0in}
+    \setlength{\oddsidemargin}{18pt}  
+    \setlength{\evensidemargin}{18pt} 
+    \setlength{\itemsep}{1pt minus 0.5pt}  
+\fi
+%    \end{macrocode}
+%
+% \subsection{New commands}
+%
+% \subsubsection{Customization}
+%
+% \DescribeMacro{\titlefontstyle} \DescribeMacro{\schoolfontstyle}
+% \DescribeMacro{\departmentfontstyle} \DescribeMacro{\authorfontstyle}
+% \DescribeMacro{\handoutnumfontstyle} \DescribeMacro{\headerfontstyle}
+% \DescribeMacro{\thehandout}
+% \changes{v2.0}{1997/03/26}{added \cs{headerfontstyle}}
+% These macros define the font styles.
+%    \begin{macrocode}
+\newcommand{\titlefontstyle}{\LARGE\bf}
+\newcommand{\schoolfontstyle}{\small\sf}
+\newcommand{\departmentfontstyle}{\small\sf}
+\newcommand{\authorfontstyle}{\sl}
+\newcommand{\datefontstyle}{\sl}
+\newcommand{\handoutnumfontstyle}{\sl}
+\newcommand{\headerfontstyle}{\sl}
+\newcommand{\handoutname}{Handout}
+%    \end{macrocode}
+%
+% \subsubsection{Mandatory information}
+% 
+% Includes +\School+, +\Department+, etc.
+% \DescribeMacro{\School}
+%    \begin{macrocode}
+\gdef\@School{\ClassWarningNoLine{handout}{%
+    No school given.\MessageBreak
+    Use \protect\School}some school}
+\newcommand{\School}[1]{\gdef\@School{#1}}
+%    \end{macrocode}
+% \DescribeMacro{\Department}
+%    \begin{macrocode}
+\gdef\@Department{\ClassWarningNoLine{handout}{%
+    No department given.\MessageBreak
+    Use \protect\Department}some department}
+\newcommand{\Department}[1]{\gdef\@Department{#1}}
+%    \end{macrocode}
+% \DescribeMacro{\CourseNumber}
+% \changes{v2.0}{1997/03/26}{Changed the name from \cs{ClassNum} to \cs{CourseNumber}.}
+% Since the course number is put in the header on each page, and don't want
+% to issue a warning message on each page if it is undefined, we use 
+% +\@ifNoCourseNumber+.
+%    \begin{macrocode}
+\newif\ifn@coursenum\n@coursenumtrue\gdef\@CourseNumber{xx999}
+\newcommand*{\CourseNumber}[1]{\gdef\@CourseNumber{#1}\n@coursenumfalse}
+%    \end{macrocode}
+% \DescribeMacro{\CourseTitle}
+% \changes{v2.0}{1997/03/26}{Changed name from \cs{ClassTitle} to \cs{CourseTitle}.}
+%    \begin{macrocode}
+\gdef\@CourseTitle{\ClassWarningNoLine{handout}{%
+    No course title given.\MessageBreak
+    Use \protect\CourseTitle}some course with no name}
+\newcommand{\CourseTitle}[1]{\gdef\@CourseTitle{#1}}
+%    \end{macrocode}
+%
+% \subsection{Optional information}
+%
+% \DescribeMacro{\CourseInstructor}
+% \changes{v2.0}{1997/03/26}{Changed name from \cs{ClassInstructor} to \cs{CourseInstructor}.}
+%    \begin{macrocode}
+\gdef\@author{\ClassWarningNoLine{handout}{%
+    No instructor/author given.\MessageBreak
+    Use \protect\CourseInstructor \space or \protect\author}some instructor}
+\newcommand*{\CourseInstructor}[1]{\gdef\@author{#1}}
+%    \end{macrocode}
+% \DescribeMacro{\HandoutNumber}
+%    \begin{macrocode}
+\newif\if@numbered\@numberedfalse
+\newcommand*{\HandoutNumber}[1]{%
+    \gdef\@HandoutNumber{\handoutname \##1}\@numberedtrue}
+%    \end{macrocode}
+% \DescribeMacro{\title}
+%    \begin{macrocode}
+\newif\if@hastitle\@hastitlefalse\gdef\@title{}
+\renewcommand*{\title}[1]{\gdef\@title{#1}\@hastitletrue}
+%    \end{macrocode}
+%
+% \subsection{Title}
+%
+% \DescribeMacro{\thanks}
+% We do not need it here, it just makes things too complicated.
+%    \begin{macrocode}
+\renewcommand{\thanks}{\ClassWarning{handout}{%
+	Command \protect\thanks\space ignored in this class.}}
+\gdef\@thanks{}
+%    \end{macrocode}
+%
+% \DescribeMacro{\maketitle}
+%    \begin{macrocode}
+\renewcommand{\maketitle}{\par
+    \begingroup
+        \if@twocolumn
+            \ifnum \col@number=\@ne
+                \@makehandouttitle
+            \else
+                \twocolumn[\@makehandouttitle]%
+            \fi
+        \else
+            \newpage
+            \global\@topnum\z@   % Prevents figures from going at top of page.
+            \@maketitle
+        \fi
+        \thispagestyle{empty}
+    \endgroup
+%    \end{macrocode}
+% So far pretty much the same as in the standard document classes. Here comes the extra 
+% stuff. First we deal with checking whether the handout number was set.
+%    \begin{macrocode}
+    \ifn@coursenum
+        \ClassWarning{handout}{No course number given.\MessageBreak
+                               Use \protect\CourseNumber}
+    \fi
+%    \end{macrocode}
+% Then we set the header.
+% \changes{v2.0}{1997/03/26}{Changed header layout. It uses \cs{headerfontstyle} now}
+%    \begin{macrocode}
+    \if@numbered
+        \def\@handoutinfo{\@CourseNumber: \@HandoutNumber{} --- \@date}
+    \else
+        \def\@handoutinfo{\@CourseNumber{} --- \@date}
+    \fi
+    \if@twoside
+        \if@hastitle
+            \markboth{\hspace*{\fill}\headerfontstyle\@title}{
+                      \headerfontstyle\@handoutinfo\hspace*{\fill}}
+        \else
+            \markboth{\hspace*{\fill}\headerfontstyle\@CourseTitle}{
+                      \headerfontstyle\@handoutinfo\hspace*{\fill}}
+        \fi
+    \else
+        \if@hastitle
+            \markright{\headerfontstyle\@handoutinfo
+                       \hspace*{\fill}\@title\hspace*{\fill}}
+        \else
+            \markright{\headerfontstyle\@handoutinfo\hspace*{\fill}}
+        \fi
+    \fi
+    \pagestyle{myheadings}
+%    \end{macrocode}
+% And forget everything we don't need anymore.
+%    \begin{macrocode}
+    \setcounter{footnote}{0}% and now we kill everything useless
+    \global\let\maketitle\relax
+    \global\let\@maketitle\relax
+    \global\let\@maketitle\relax % we didn't use it anyway ...
+    \global\let\@author\@empty
+    \global\let\@School\@empty
+    \global\let\@Department\@empty
+    \global\let\@CourseTitle\@empty
+    \global\let\title\relax
+    \global\let\date\relax
+    \global\let\author\relax
+    \global\let\and\relax
+    \global\let\School\relax
+    \global\let\Department\relax
+    \global\let\CourseNumber\relax
+    \global\let\CourseTitle\relax
+    \global\let\CourseInstructor\relax}
+%    \end{macrocode}
+% \DescribeMacro{\@maketitle}
+% +\@maketitle+ prints out the actual title information.
+% \changes{v1.2d}{1996/11/08}{centered the ``class number: class title'' part in the header
+%                   by putting the handout number into \cs{makebox}{\tt [0in][r]}}
+%    \begin{macrocode}  
+\def\@maketitle{%
+    \newpage
+    \null
+    \vskip 2em%
+    \begin{center}%
+        \vspace*{-0.6in}%
+        {\schoolfontstyle\@School}\\
+        {\departmentfontstyle\@Department}\\[1.5ex]
+        \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}cr}
+            \makebox[0in][l]{}
+            & {\@CourseNumber}: {\@CourseTitle}
+            & \if@numbered{\makebox[0in][r]{\handoutnumfontstyle\@HandoutNumber}}\fi\\
+            \makebox[0in][l]{\authorfontstyle\@author}
+        && \makebox[0in][r]{\datefontstyle\@date}\\
+        \hline    
+        \end{tabular*}\par
+        \if@hastitle\vspace*{10ex}\titlefontstyle\@title\fi
+    \end{center}}
+%    \end{macrocode}
+% 
+\endinput
+
