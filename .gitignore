@@ -1,0 +1,14 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# Vim swap files
+*.swp
+*.swo
+*.swn
+
+# Temp / scratch
+tmp/
+claude_session.txt

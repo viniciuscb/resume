@@ -1,0 +1,170 @@
+Strong senior profile, but too broad for the target role.
+Your CV Score
+68/ 100
+
+Overall this is a strong senior engineering CV with solid ATS readiness and credible experience, but it is held back by broad positioning and weak quantified impact. The biggest gains will come from narrowing the headline to Ruby on Rails / Mobile Engineer and adding measurable outcomes to the most recent roles.
+Score Breakdown
+CV Overview
+
+This CV is strong for a senior Ruby on Rails / full-stack engineer and shows real end-to-end delivery across SaaS, mobile, and legacy modernization. It reads as experienced and technically broad, but the biggest gap for your target role is that the summary and skills do not lead with a tight Ruby on Rails / Mobile Engineer positioning, so recruiters may see you as a generalist rather than a targeted senior candidate.
+What is working
+
+    The experience section shows senior-level ownership with concrete system scope: multi-tenant SaaS, LDAP-backed integrations, AWS Lambda, native Android, and full-stack delivery across several stacks.
+    TapGoods bullets are strong because they describe end-to-end implementation work across database, API, UI, and printing workflows, which is exactly the kind of scope hiring managers want for senior software and Rails roles.
+    The CV includes relevant keywords for the target roles across multiple sections, including Ruby on Rails, GraphQL, React Native, Django, PostgreSQL, MySQL, Redis, AWS, Docker, Sidekiq, and Linux.
+    The education section is credible and relevant for software engineering, with a master's in Informatics and a computer science degree.
+
+What to improve
+
+    The summary is too broad at the top: "Senior Full-Stack and Mobile Engineer" dilutes the Ruby on Rails / Mobile Engineer target and does not immediately tell recruiters which lane you want.
+    Quantified impact is limited in the experience section. Most bullets describe what you built, but not enough of them show measurable business outcomes, scale, or performance impact.
+    The skills section is broad but not clearly prioritized for the target role, so ATS and recruiters may not quickly identify your strongest match for Ruby on Rails or mobile engineering.
+    The CV includes very old and unrelated-seeming experience at the same prominence as current work, which can distract from the most relevant senior software engineering narrative.
+    
+    
+    
+# Professional Summary / Profile Statement
+
+Your CV vs. recommended
+Current
+
+Senior Full-Stack and Mobile Engineer with 25 years of experience building web and mobile applications across SaaS, social impact, and embedded systems. Proficient in Ruby on Rails, React/TypeScript, Django/Python, and React Native, with a track record of owning complex features end-to-end in agile remote teams. M.Sc. in Computer Sciences. Based in Brazil (GMT−3), available for full overlap with EST, flexible with PST.
+Guideline Example
+Recommended
+
+Senior Ruby on Rails / Mobile Engineer with 25 years of experience building SaaS, mobile, and systems software across multi-tenant platforms, social impact products, and embedded environments. Strong in Ruby on Rails, React Native, GraphQL, PostgreSQL/MySQL, AWS, Docker, and Linux, with end-to-end ownership of complex features in remote agile teams. M.Sc. in Informatics; based in Brazil with full EST overlap.
+Why it matters and how to improve
+
+Hiring managers for senior Rails or Mobile Engineer roles scan the summary first to confirm your target lane, seniority, and core stack in seconds. A broader full-stack headline can make you look unfocused even when your experience is strong.
+
+TipFormula: target title + core stack + scope + domain in the first 2 lines.
+
+# Experience Section: TapGoods
+
+Your CV vs. recommended
+Current
+
+TapGoods: Bullets focus on feature delivery and technical execution, but most outcomes are qualitative and do not show measurable impact.
+Guideline Example
+Recommended
+
+Keep the same facts, but frame the most important bullets as outcome-first: for example, lead with the routing/delivery refactor, the end-to-end Event Grouping feature, and the multi-document printout standardization, then add whatever measurable result you can support from the project context.
+Why it matters and how to improve
+
+For senior Rails roles, hiring managers look for evidence that you can improve a production system, not just implement features. Without metrics or explicit business outcomes, strong technical work is harder to differentiate from mid-level delivery.
+
+TipUse the rule: Action + System scope + Result + Metric, and put the strongest proof first.
+
+
+# Experience Section: Cooperativa EITA
+
+Your CV vs. recommended
+Current
+
+Cooperativa EITA: Strong breadth across Rails, Nextcloud, AWS Lambda, Android, and Django, but the role reads as a list of projects rather than a sharply senior engineering narrative.
+Guideline Example
+Recommended
+
+Organize the bullets to emphasize your highest-value senior contributions first: primary Ruby on Rails ownership, multi-tenant SaaS administration, and platform/integration work, then keep the Android and Django items as supporting proof of breadth.
+Why it matters and how to improve
+
+Senior software recruiters want to see a clear through-line. If the section reads like unrelated project history, it weakens your case for a focused Rails or software engineer role.
+
+TipGroup experience by strategic value, not by chronology alone: lead with the work that best matches the target role.
+
+# Experience Section: Focus NFe / RMI / Dataprom / LACTEC
+
+Your CV vs. recommended
+Current
+
+Focus NFe / RMI / Dataprom / LACTEC / Early Career: Older roles are relevant context, but they take up space that could be used to reinforce senior-level Rails and mobile positioning.
+Guideline Example
+Recommended
+
+Keep older roles brief and factual, and reduce detail where the stack is no longer central to the target role. Preserve only the parts that support your evolution into Rails, mobile, and full-stack work.
+Why it matters and how to improve
+
+Recruiters for senior roles skim older history for progression, not depth. Too much legacy detail can dilute the relevance of your current stack and make the resume feel less targeted.
+
+TipOlder roles should prove progression, not compete with your current positioning.
+
+
+# Skills Section
+
+Your CV vs. recommended
+Current
+
+Skills are comprehensive and technically strong, but they are broad and not prioritized around the target role. The section mixes many languages, frameworks, infrastructure tools, and soft skills without a clear hierarchy.
+Guideline Example
+Recommended
+
+Reorder skills to foreground the most relevant target-role keywords first: Ruby on Rails, Ruby, React Native, GraphQL, PostgreSQL, MySQL, Redis, AWS, Docker, Linux, Sidekiq, REST APIs, CI/CD, Git, TypeScript. Keep secondary languages and older technologies lower in the list.
+Why it matters and how to improve
+
+ATS and recruiters both weight early keywords heavily. For Rails and Mobile Engineer roles, the top of the skills section should immediately mirror common job descriptions and reduce the chance that your best match gets buried.
+
+TipRule: put the top 10 job-description keywords first, then group the rest by category.
+
+# ATS & Recruiter Optimization
+
+Current
+
+The CV already has strong ATS fundamentals, but the target-role keywords are spread across several stacks rather than normalized around Ruby on Rails / Mobile Engineer.
+Guideline Example
+Recommended
+
+Standardize the language around your target search terms in summary, skills, and experience: Ruby on Rails, Mobile Engineer, React Native, GraphQL, PostgreSQL, AWS, Docker, Linux, REST APIs, CI/CD. Keep titles clear and consistent so recruiter search filters match you more easily.
+Why it matters and how to improve
+
+Recruiters often search by exact keywords and title variants. If your resume spreads attention across too many technologies without a clear target set, you may be filtered out of searches for Rails or mobile specialists.
+
+TipMirror the job description’s exact title and 8-12 core keywords in at least three sections.
+
+# Formatting & Layout
+
+Your CV vs. recommended
+Current
+
+The parsed CV is readable, but the content density suggests a long document that could be streamlined for faster review.
+Guideline Example
+Recommended
+
+Tighten the most recent two roles, reduce older-role detail, and keep bullets to one line where possible. Maintain consistent date formatting and concise bullets so the resume scans cleanly on screen and in ATS.
+Why it matters and how to improve
+
+Senior recruiters spend seconds on first-pass review. If the layout feels dense, they may miss your strongest evidence of fit before they reach the bottom of the page.
+
+TipDesign rule: the more senior you are, the more ruthless your editing should be.
+
+# Education & Certification
+
+Your CV vs. recommended
+Current
+
+M.Sc., Informatics and B.Sc., Computer Sciences are clearly listed, but the section is not used to support the target role beyond degree names.
+Guideline Example
+Recommended
+
+Keep education concise, and if you add anything later, only include certifications or training that directly reinforce Rails, mobile, cloud, or backend engineering.
+Why it matters and how to improve
+
+For experienced engineers, education should support credibility without distracting from recent production experience. Hiring managers care more about recent stack alignment than academic detail.
+
+TipEducation should validate expertise, not compete with experience.
+
+# Your CV vs. recommended
+Current
+
+No dedicated projects, publications, or portfolio links are included beyond GitHub and LinkedIn in the header.
+Guideline Example
+Recommended
+
+If you have public work that directly supports Ruby on Rails or mobile engineering, add a short Projects or Open Source section with links to the most relevant items.
+Why it matters and how to improve
+
+For technical roles, public code or shipped projects can strengthen proof of ability and help recruiters verify your stack faster.
+
+TipAdd only external proof that reinforces the exact role you want.
+
+
+    
